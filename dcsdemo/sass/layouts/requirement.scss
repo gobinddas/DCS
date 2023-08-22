@@ -1,0 +1,91 @@
+.requirement {
+  background-color: $lightgreen;
+
+  .section-header {
+    text-align: center;
+  }
+
+  .requirement-collection {
+    display: flex;
+    gap: 20px;
+    margin: 0px 50px;
+
+    .requirement-item {
+      text-align: center;
+      margin-top: 50px;
+
+      .numbers-shown {
+        font-size: 45px;
+        color: $btn-color;
+
+
+        span {
+          color: $primaryColor;
+          font-weight: 700;
+
+
+        }
+
+      }
+
+      .title-shown {
+        font-family: "Archivo Black", Sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        color: $primaryColor;
+      }
+
+      .des-shown {
+        color: $dark-color;
+        margin: 20px 0px;
+      }
+
+      .yellow-line {
+        width: 30%;
+        border: 5px solid $orange;
+        margin: auto;
+      }
+    }
+  }
+}
+
+
+@include custom_max(992px) {
+
+  .requirement {
+
+
+
+    .requirement-collection {
+      flex-direction: column;
+      margin: 0px;
+
+      .requirement-item {
+        margin-top: 30px;
+
+        .numbers-shown {
+          font-size: 28px;
+
+
+
+
+        }
+
+        .title-shown {
+          font-size: 18px;
+        }
+
+        .des-shown {
+          margin: 15px 0px;
+        }
+
+        .yellow-line {
+          width: 50%;
+          border: 4px solid $orange;
+        }
+      }
+    }
+  }
+
+
+}

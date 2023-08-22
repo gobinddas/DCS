@@ -1,0 +1,70 @@
+.thanks {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    padding: 160px 0 80px 0;
+    .icon {
+        // background-color: rgba($primaryColor, 0.4);
+        padding-top: 60px;
+        width: 100%;
+        i {
+            font-size: 72px;
+            color: $secondaryColor;
+        }
+    }
+    .message {
+        font-family: "Open Sans", sans-serif;
+        display: inline-block;
+        margin-top: 30px;
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            word-spacing: 0.05em;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            word-spacing: 0.05em;
+            color: #494949;
+            padding: 20px 0;
+        }
+    }
+    .redirect {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+        background-color: $primaryColor;
+        border: 1px solid $primaryColor;
+        transition: 0.3s ease-in-out;
+        padding: 10px;
+        i {
+            color: $white;
+            padding-right: 8px;
+            transition: 0.3s ease-in-out;
+        }
+        h5 {
+            color: $white;
+            font-weight: 500;
+            font-size: 18px;
+            word-spacing: 0.05em;
+            margin-bottom: 0;
+            transition: 0.3s ease-in-out;
+        }
+        &:hover {
+            text-decoration: none;
+            background-color: transparent;
+            i {
+                color: #4b83fc;
+            }
+            h5 {
+                color: #4b83fc;
+            }
+        }
+    }
+}

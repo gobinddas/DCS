@@ -1,0 +1,89 @@
+.about {
+  background-color: transparent;
+  background-image: linear-gradient(75deg, $white 50%, $lightgreen 50%);
+
+  .business-potential {
+    display: flex;
+    align-items: center;
+    padding: 0px 60px;
+
+    .large-info {
+      width: 66%;
+      border-left: 5px solid $btn-color;
+      display: flex;
+      align-items: center;
+
+      .large-info-content {
+        width: 100%;
+        padding: 20px 0px 20px 30px;
+
+      }
+    }
+
+    .small-info {
+      width: 34%;
+
+      .small-info-content {
+        width: 100%;
+        color: $primaryColor;
+      }
+    }
+  }
+
+}
+
+
+
+@include custom_max(992px) {
+
+  .about {
+
+    .business-potential {
+      flex-direction: column;
+      padding: 0px;
+
+      .large-info {
+        width: 100%;
+        margin-bottom: 20px;
+
+        .large-info-content {
+          width: 100%;
+          padding: 10px 0px 10px 20px;
+
+        }
+      }
+
+      .small-info {
+        width: 100%;
+
+
+      }
+    }
+
+  }
+
+}
+
+
+
+@include custom_max(576px) {
+
+  .about {
+
+    .business-potential {
+
+      .large-info {
+
+
+        .large-info-content {
+          padding: 0px 0px 0px 10px;
+
+        }
+      }
+
+
+    }
+
+  }
+
+}

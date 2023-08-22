@@ -1,0 +1,40 @@
+// media query
+@mixin custom_max($x){
+  @media screen and (max-width:$x){
+    @content;
+  }
+}
+@mixin custom_min($x){
+  @media screen and (min-width:$x){
+    @content;
+  }
+}
+
+
+@mixin placeholder{
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {  
+        @content;
+    }
+}
+
+
+@mixin clear{
+  &::after{
+    clear: both;
+    content: "";
+    display: table;
+    width: 100%;
+  }
+}

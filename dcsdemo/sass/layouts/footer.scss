@@ -1,0 +1,260 @@
+footer {
+    background-color: $white;
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+
+        .brand-des {
+            width: 30%;
+
+            .des {
+                text-align: left;
+                color: #232F55;
+                font-family: "Mulish", Sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            .number {
+                font-family: "Josefin Sans", Sans-serif;
+                font-size: 24px;
+                color: $primaryColor;
+                margin: 20px 0px;
+            }
+
+            .email {
+                font-family: "Josefin Sans", Sans-serif;
+                font-size: 15px;
+                text-decoration: underline;
+                color: #232F55;
+            }
+        }
+
+    }
+
+    .footer-item {
+        width: 20%;
+        padding-left: 30px;
+
+        .item-heading {
+            font-family: "Josefin Sans", Sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: $primaryColor;
+        }
+
+        .item {
+            margin: 10px 0px;
+
+            a {
+                font-family: "Mulish", Sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                color: #232F55;
+
+            }
+        }
+    }
+
+    .last-item {
+        width: 30%;
+
+        .emailsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $white;
+            padding: 7px;
+            border-radius: 40px;
+            border: 2px solid $primaryColor;
+
+            input {
+                outline: none;
+                border: none;
+                padding: 5px;
+
+                &::placeholder {
+                    color: $dark-color;
+                }
+            }
+
+            a {
+                padding: 10px 15px;
+                background-color: $primaryColor;
+                color: $white;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    padding: 10px 0px;
+    background-color: $white;
+
+    .footer-double {
+        display: flex;
+        justify-content: space-between;
+
+        .copyright {
+            font-family: "Mulish", Sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: $primaryColor;
+
+
+            a {
+                display: inline;
+                font-size: 16px;
+                color: $primaryColor;
+                font-weight: 600;
+
+
+            }
+        }
+
+        .icons {
+            display: flex;
+
+            .item {
+
+                margin: 0px 10px;
+
+                i {
+                    color: $dark-color;
+                    font-size: 18px;
+                }
+
+                &:hover {
+
+                    i {
+                        color: $primaryColor;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+@include custom_max(1200px) {
+    footer {
+
+        .footer-top {
+
+            flex-wrap: wrap;
+
+            .brand-des {
+                width: 60%;
+
+
+
+
+
+            }
+
+        }
+
+        .footer-item {
+            width: 40%;
+
+
+        }
+
+        .last-item {
+            width: 60%;
+
+
+        }
+    }
+
+
+
+}
+
+
+
+@include custom_max(576px) {
+    footer {
+
+        .footer-top {
+
+            flex-wrap: wrap;
+
+            .brand-des {
+                width: 100%;
+                text-align: center;
+
+                .des {
+                    text-align: center;
+                    font-size: 14px;
+                }
+
+                .number {
+                    font-size: 18px;
+                    margin: 10px 0px;
+                }
+
+                .email {
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+        .footer-item {
+            width: 100%;
+            padding-left: 0px;
+            margin: 20px 0px;
+            text-align: center;
+
+            .item-heading {
+                font-size: 18px;
+
+            }
+
+            .item {
+                margin: 7px 0px;
+
+                a {
+                    font-size: 14px;
+
+
+                }
+            }
+        }
+
+        .last-item {
+            width: 100%;
+            text-align: center;
+
+
+        }
+    }
+
+    .footer-bottom {
+        padding: 10px 0px;
+
+        .footer-double {
+
+            flex-direction: column;
+            align-items: center;
+
+            .copyright {
+                font-size: 14px;
+
+                text-align: center;
+
+
+
+            }
+
+
+        }
+    }
+
+}
